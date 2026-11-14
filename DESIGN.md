@@ -4,9 +4,12 @@ Recorded 2026-11-14 from the built site. The source of truth is `assets/site.css
 
 ## World
 
+The studio name on the site is **Salon der Glut**, and its mark is the low-poly flame (`assets/mark-192.png`, `mark-512.png`; `logo-salon-der-glut-1080.png` is the full lockup). The YouTube channel is still called Haus Tacorari, so that name appears only where the text means the channel.
+
+
 The site is the devlog's prompt card, turned into web pages. Every page opens the way a Haus Tacorari vertical video opens. A framed prompt types one line, with a block cursor. On the home page, an "AI" reply follows in steel blue. After that, the game answers in pictures. Each picture is a 16:9 window with one bold caption line under it.
 
-A page ends the way a video ends. First comes the title card: the name large in mincho, then Haus Tacorari, then "開発中". Last comes the sign-off, 「改善の余地、大いにあり」 / "Plenty of room to improve".
+A page ends the way a video ends. First comes the title card: the name large in mincho, then Salon der Glut, then "開発中". Last comes the sign-off, 「改善の余地、大いにあり」 / "Plenty of room to improve".
 
 ## Color
 
@@ -17,7 +20,7 @@ A page ends the way a video ends. First comes the title card: the name large in 
 | `--ink` | `#eee6dc` | Text |
 | `--dim` | `#a1968d` | Secondary text, prompt frame, caret. The video DIM, raised slightly to reach 4.5:1. |
 | `--rule` | `#4a423d` | Hairlines, scrollbar thumb |
-| `--gold` | `#e8c478` | The only action color: links on hover, the YouTube button, "see this game", focus ring, text selection |
+| `--gold` | `#d9ad5e` (the sand facet of the flame logo) | The only action color: links on hover, the YouTube button, "see this game", focus ring, text selection |
 | `--steel` | `#b0bec8` | The AI reply line, and nothing else |
 
 The page is dark because visitors arrive from dark vertical videos, mostly on phones. It should feel continuous with the video they just watched.

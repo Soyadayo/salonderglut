@@ -1,4 +1,4 @@
-/* Haus Tacorari — the devlog prompt card, as a website.
+/* Salon der Glut — the devlog prompt card, as a website.
    Same ground, ink and gold as the vertical videos (stella-devlog/_template/devlog_kit.py). */
 
 :root {
@@ -7,7 +7,7 @@
   --ink: #eee6dc;
   --dim: #a1968d;          /* video DIM lifted slightly for 4.5:1 on ground */
   --rule: #4a423d;
-  --gold: #e8c478;
+  --gold: #d9ad5e;          /* the sand facet of the flame logo */
   --steel: #b0bec8;        /* the AI reply line */
   --col: 52rem;
   --mincho: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Noto Serif JP", "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -60,7 +60,7 @@ img { display: block; max-width: 100%; height: auto; }
   color: var(--dim);
 }
 .bar__home { display: flex; align-items: center; gap: .65rem; text-decoration: none; color: var(--ink); }
-.bar__home img { width: 34px; height: 34px; border-radius: 50%; }
+.bar__home img { width: 40px; height: 40px; }
 .bar__name { font-family: var(--latin); font-size: 1.15rem; letter-spacing: .01em; }
 .bar nav { margin-left: auto; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .25rem 1.1rem; }
 .bar nav a { text-decoration: none; color: var(--dim); }
@@ -171,8 +171,10 @@ html[lang="en"] .episode__title { font-family: var(--latin); font-weight: 400; l
 /* ---------- title card + verdict (the video's last two seconds) ---------- */
 
 .titlecard { text-align: center; margin: clamp(5rem, 16vw, 9rem) 0 0; }
+.titlecard__mark { width: clamp(140px, 30vw, 220px); height: auto; margin: 0 auto 1.6rem; }
 .titlecard__name { font-family: var(--mincho); font-weight: 600; font-size: clamp(2.4rem, 8vw, 4.25rem); line-height: 1.2; margin: 0; letter-spacing: .03em; }
-html[lang="en"] .titlecard__name { font-family: var(--latin); font-weight: 400; letter-spacing: 0; }
+html[lang="en"] .titlecard__mark { width: clamp(140px, 30vw, 220px); height: auto; margin: 0 auto 1.6rem; }
+.titlecard__name { font-family: var(--latin); font-weight: 400; letter-spacing: 0; }
 .titlecard__studio { font-family: var(--latin); color: var(--dim); font-size: 1.15rem; margin: 1.1rem 0 .2rem; }
 .titlecard__note { color: var(--dim); font-size: .85rem; margin: 0; }
 

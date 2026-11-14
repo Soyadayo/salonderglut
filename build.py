@@ -1,4 +1,4 @@
-"""Writes every page of the Haus Tacorari site from the copy below (CONTENT.md is the approved source).
+"""Writes every page of the Salon der Glut site from the copy below (CONTENT.md is the approved source).
 
     python build.py
 
@@ -119,19 +119,19 @@ GAMES = {
 }
 
 HOME = {
-    "ja": {"title": "Haus Tacorari", "line": "ゲームを三つ、作っている。",
+    "ja": {"title": "Salon der Glut", "line": "ゲームを三つ、作っている。",
            "reply": "三つとも開発中です。AI にどう頼み、何を自分の手でやっているかを、YouTube で記録しています。"},
-    "en": {"title": "Haus Tacorari", "line": "We are making three games.",
+    "en": {"title": "Salon der Glut", "line": "We are making three games.",
            "reply": "All three are in development. We film how they get made: the prompts we give the AI, and the parts we still do by hand."},
 }
 
-ADDRESS_HTML = "Soya Arakawa<br>Haus Tacorari<br>c/o Block Services<br>Stuttgarter Str. 106<br>70736 Fellbach<br>Deutschland"
+ADDRESS_HTML = "Soya Arakawa<br>Salon der Glut<br>c/o Block Services<br>Stuttgarter Str. 106<br>70736 Fellbach<br>Deutschland"
 MAIL_LINK = '<a href="mailto:haustacorari@gmail.com">haustacorari@gmail.com</a>'
 GITHUB_PRIVACY = "https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement"
 
 PRIVACY = {
     "ja": f"""<p class="updated">最終更新: 2026年11月14日</p>
-<p>このページでは、Haus Tacorari(以下「私たち」)が、このサイトと、自分たちの YouTube チャンネルの運営に使う道具で、個人に関する情報をどう扱うかを説明します。EU 一般データ保護規則(GDPR)に基づく説明です。</p>
+<p>このページでは、Salon der Glut(以下「私たち」)が、このサイトと、自分たちの YouTube チャンネルの運営に使う道具で、個人に関する情報をどう扱うかを説明します。EU 一般データ保護規則(GDPR)に基づく説明です。</p>
 <h2>責任者</h2>
 <p>{ADDRESS_HTML}<br>メール: {MAIL_LINK}</p>
 <h2>このサイトの配信(GitHub Pages)</h2>
@@ -152,7 +152,7 @@ PRIVACY = {
 <h2>あなたの権利</h2>
 <p>あなたには、自分に関する情報について、開示(第15条)、訂正(第16条)、削除(第17条)、処理の制限(第18条)、データポータビリティ(第20条)、異議(第21条)を求める権利があります。ご連絡は上のメールアドレスへどうぞ。監督機関に苦情を申し立てることもできます。私たちの所在地の監督機関は、バーデン=ヴュルテンベルク州のデータ保護・情報自由委員(LfDI Baden-Württemberg)です。</p>""",
     "en": f"""<p class="updated">Last updated: 14 November 2026</p>
-<p>This page explains how Haus Tacorari ("we") handles personal data on this website and in the tool we use to run our own YouTube channel, as required by the EU General Data Protection Regulation (GDPR).</p>
+<p>This page explains how Salon der Glut ("we") handles personal data on this website and in the tool we use to run our own YouTube channel, as required by the EU General Data Protection Regulation (GDPR).</p>
 <h2>Controller</h2>
 <p>{ADDRESS_HTML}<br>Email: {MAIL_LINK}</p>
 <h2>Hosting (GitHub Pages)</h2>
@@ -208,9 +208,9 @@ YT_ICON = ('<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="curr
 
 CONTRACT = """<!--
 THESIS: every page opens as the devlog's prompt card. One typed line, then the game answers in pictures. Refuses the studio default of a hero image over a grid of game cards.
-OWN-WORLD: near-black #080606 ground, warm ink #eee6dc, dim #a1968d, one gold #e8c478 for action, steel #b0bec8 for the AI reply. A 3px rounded prompt frame with a block cursor; mincho titles, gothic captions, Palatino for Latin. The video's picture window with one caption line beneath.
+OWN-WORLD: near-black #080606 ground, warm ink #eee6dc, dim #a1968d, one ember gold #d9ad5e (from the flame logo) for action, steel #b0bec8 for the AI reply. A 3px rounded prompt frame with a block cursor; mincho titles, gothic captions, Palatino for Latin. The video's picture window with one caption line beneath.
 STORY: a player who came from a Short recognises the card and sees three games as three prompts. They open one, read what it is, and go to the channel.
-FIRST VIEWPORT: the HT mark and name top left, JA/EN top right. The prompt card fills the column and types "ゲームを三つ、作っている。"; the AI reply follows. The first game's picture window starts below the fold line on desktop and in view on phones.
+FIRST VIEWPORT: the flame mark and "Salon der Glut" top left, JA/EN top right. The prompt card fills the column and types "ゲームを三つ、作っている。"; the AI reply follows. The first game's picture window starts below the fold line on desktop and in view on phones.
 FORM: devlog prompt card, my 1st of 7. Seed key 8dda7d13 (user chose the pick over the roll).
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 -->"""
@@ -266,7 +266,7 @@ def shell(lang, page, depth, title, desc, body):
         langs = f'<span lang="ja">JA</span><a href="{href("en", page, depth)}" lang="en" hreflang="en">EN</a>'
     else:
         langs = f'<a href="{href("ja", page, depth)}" lang="ja" hreflang="ja">JA</a><span lang="en">EN</span>'
-    full_title = title if page == "home" else f"{title} | Haus Tacorari"
+    full_title = title if page == "home" else f"{title} | Salon der Glut"
     return f"""<!doctype html>
 <html lang="{lang}">
 <head>
@@ -286,7 +286,7 @@ def shell(lang, page, depth, title, desc, body):
 {CONTRACT}
 <a class="skip" href="#main">{u["skip"]}</a>
 <header class="bar">
-<a class="bar__home" href="{href(lang, "home", depth)}"><img src="{rel(depth)}assets/mark-192.png" width="34" height="34" alt=""><span class="bar__name">Haus Tacorari</span></a>
+<a class="bar__home" href="{href(lang, "home", depth)}"><img src="{rel(depth)}assets/mark-192.png" width="40" height="40" alt=""><span class="bar__name">Salon der Glut</span></a>
 <nav aria-label="Games">{nav}<span class="lang">{langs}</span></nav>
 </header>
 <main id="main">
@@ -294,7 +294,7 @@ def shell(lang, page, depth, title, desc, body):
 </main>
 <p class="verdict" aria-hidden="true">{u["verdict"][0]}<br>{u["verdict"][1]}</p>
 <footer>
-<span>&copy; 2026 Haus Tacorari</span>
+<span>&copy; 2026 Salon der Glut</span>
 <a href="mailto:{MAIL}">{MAIL}</a>
 <a href="{YOUTUBE}">YouTube</a>
 <a class="spacer" href="{href(lang, "privacy", depth)}">{u["privacy"]}</a>
@@ -323,7 +323,7 @@ def home(lang, sizes, depth):
             f'<span class="episode__go">{u["go"]} &rarr;</span></a></article>')
     parts.append(f'<section class="channel"><p>{e(u["channel_text"])}</p>'
                  f'<a class="button" href="{YOUTUBE}">{YT_ICON}{e(u["channel_button"])}</a></section>')
-    parts.append(f'<section class="titlecard" aria-label="Haus Tacorari"><p class="titlecard__name" lang="en">Haus Tacorari</p>'
+    parts.append(f'<section class="titlecard" aria-label="Salon der Glut"><img class="titlecard__mark" src="{rel(depth)}assets/mark-512.png" width="512" height="512" alt=""><p class="titlecard__name" lang="de">Salon der Glut</p>'
                  f'<p class="titlecard__studio">{"ゲームを作るスタジオ" if lang == "ja" else "A game studio"}</p></section>')
     return "\n".join(parts)
 
@@ -344,7 +344,7 @@ def game(lang, g, sizes, depth):
     parts.append(f'<section class="channel"><p>{e(u["channel_text"])}</p>'
                  f'<a class="button" href="{YOUTUBE}">{YT_ICON}{e(u["channel_button"])}</a></section>')
     parts.append(f'<section class="titlecard" aria-label="{e(t["title"])}"><p class="titlecard__name">{e(t["title"])}</p>'
-                 f'<p class="titlecard__studio">Haus Tacorari</p><p class="titlecard__note">{u["dev"]}</p></section>')
+                 f'<p class="titlecard__studio">Salon der Glut</p><p class="titlecard__note">{u["dev"]}</p></section>')
     return "\n".join(parts)
 
 
@@ -366,9 +366,9 @@ def main():
             if page == "home":
                 title, desc, body = HOME[lang]["title"], HOME[lang]["reply"], home(lang, sizes, depth)
             elif page == "impressum":
-                title, desc, body = "Impressum", "Impressum | Haus Tacorari", impressum(lang)
+                title, desc, body = "Impressum", "Impressum | Salon der Glut", impressum(lang)
             elif page == "privacy":
-                title, desc, body = UI[lang]["privacy"], UI[lang]["privacy"] + " | Haus Tacorari", privacy(lang)
+                title, desc, body = UI[lang]["privacy"], UI[lang]["privacy"] + " | Salon der Glut", privacy(lang)
             else:
                 t = GAMES[page][lang]
                 title, desc, body = t["title"], t["caption"] + " " + t["body"][0], game(lang, page, sizes, depth)

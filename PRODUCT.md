@@ -18,7 +18,7 @@ Secondary visitors, served by the same pages without changing their priority: re
 
 ## Product Purpose
 
-This is the studio site for Haus Tacorari. It introduces three games in development and links to the devlog channel. Success means a player can tell the three games apart within a few seconds and understand each one's world. The privacy policy must also live at a stable public URL.
+This is the studio site for Salon der Glut, whose devlog channel on YouTube is Haus Tacorari. It introduces three games in development and links to the devlog channel. Success means a player can tell the three games apart within a few seconds and understand each one's world. The privacy policy must also live at a stable public URL.
 
 ## Positioning
 
@@ -39,7 +39,7 @@ Haus Tacorari films how its games are made, prompt by prompt, and says plainly w
 
 ## Brand Commitments
 
-- The studio name is **Haus Tacorari**. The same name is used on YouTube and for Steam.
+- On the site, the studio is **Salon der Glut** (changed 2026-11-14). The logo is the low-poly flame from `stella-devlog/_channel/logo_options/v3_2_tentacle_flame.png`, with the text redrawn as SALON DER GLUT. The YouTube channel is still named Haus Tacorari; that name is used only for the channel.
 - The channel logo assets are in `C:\Users\salon\Videos\stella-devlog\_channel\` (`logo_mark_1080.png`, `logo_wordmark.png`, `logo_wordmark_dark.png`).
 - Stella's story opens with the line 「村は燃えていた。」 / "The village was burning." The author wrote it, and it must not be edited.
 - The contact address is haustacorari@gmail.com. The user confirmed it can be public.

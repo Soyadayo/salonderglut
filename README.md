@@ -2,7 +2,7 @@
 
 the website of Salon der Glut
 
-Haus Tacorari のサイト。https://soyadayo.github.io/salonderglut/
+Salon der Glut のサイト(YouTube のチャンネル名は Haus Tacorari)。https://soyadayo.github.io/salonderglut/
 
 - ページは `build.py` が書き出す(`python build.py`)。文言はそこにある。承認済みの原稿は `CONTENT.md`
 - 見た目の決まりは `DESIGN.md`、前提は `PRODUCT.md`
