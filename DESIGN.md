@@ -4,12 +4,12 @@ Recorded 2026-11-14 from the built site. The source of truth is `assets/site.css
 
 ## World
 
-The studio name on the site is **Salon der Glut**, and its mark is the low-poly flame (`assets/mark-192.png`, `mark-512.png`; `logo-salon-der-glut-1080.png` is the full lockup). The YouTube channel is still called Haus Tacorari, so that name appears only where the text means the channel.
+The studio name on the site is **Salon der Glut**, and its mark is the low-poly flame (`assets/mark-192.png`, `mark-512.png`; `logo-salon-der-glut-1080.png` is the full lockup). Haus Tacorari is the game maker and the YouTube channel: game title cards credit Haus Tacorari, and the home close reads 「ゲーム制作: Haus Tacorari」.
 
 
 The site is the devlog's prompt card, turned into web pages. Every page opens the way a Haus Tacorari vertical video opens. A framed prompt types one line, with a block cursor. On the home page, an "AI" reply follows in steel blue. After that, the game answers in pictures. Each picture is a 16:9 window with one bold caption line under it.
 
-A page ends the way a video ends. First comes the title card: the name large in mincho, then Salon der Glut, then "開発中". Last comes the sign-off, 「改善の余地、大いにあり」 / "Plenty of room to improve".
+A page ends the way a video ends. First comes the title card: the name large in mincho, then the maker, Haus Tacorari, then "開発中". Last comes the sign-off, 「改善の余地、大いにあり」 / "Plenty of room to improve".
 
 ## Color
 

@@ -324,7 +324,7 @@ def home(lang, sizes, depth):
     parts.append(f'<section class="channel"><p>{e(u["channel_text"])}</p>'
                  f'<a class="button" href="{YOUTUBE}">{YT_ICON}{e(u["channel_button"])}</a></section>')
     parts.append(f'<section class="titlecard" aria-label="Salon der Glut"><img class="titlecard__mark" src="{rel(depth)}assets/mark-512.png" width="512" height="512" alt=""><p class="titlecard__name" lang="de">Salon der Glut</p>'
-                 f'<p class="titlecard__studio">{"ゲームを作るスタジオ" if lang == "ja" else "A game studio"}</p></section>')
+                 f'<p class="titlecard__studio">{"ゲーム制作: Haus Tacorari" if lang == "ja" else "Games by Haus Tacorari"}</p></section>')
     return "\n".join(parts)
 
 
@@ -344,7 +344,7 @@ def game(lang, g, sizes, depth):
     parts.append(f'<section class="channel"><p>{e(u["channel_text"])}</p>'
                  f'<a class="button" href="{YOUTUBE}">{YT_ICON}{e(u["channel_button"])}</a></section>')
     parts.append(f'<section class="titlecard" aria-label="{e(t["title"])}"><p class="titlecard__name">{e(t["title"])}</p>'
-                 f'<p class="titlecard__studio">Salon der Glut</p><p class="titlecard__note">{u["dev"]}</p></section>')
+                 f'<p class="titlecard__studio">Haus Tacorari</p><p class="titlecard__note">{u["dev"]}</p></section>')
     return "\n".join(parts)
 
 
