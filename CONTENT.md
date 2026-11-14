@@ -145,6 +145,8 @@ On the melody rows, pitch is how high a piece floats. Turn the board on its side
 
 ## 5. プライバシーポリシー / Privacy Policy
 
+> 2026-11-14: GDPR に合わせて書き直し、Impressum(`/impressum/`)を足した。最新の文は `build.py` の `PRIVACY` と `IMPRESSUM` が正。下は最初の版。
+
 ### 日本語
 
 **プライバシーポリシー**

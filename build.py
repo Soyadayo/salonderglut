@@ -17,8 +17,9 @@ MAIL = "haustacorari@gmail.com"
 UPDATED = "2026-11-14"
 e = html.escape
 
-PAGES = ["home", "stella", "oribe", "tsukumogami", "privacy"]
-PATH = {"home": "", "stella": "stella/", "oribe": "oribe/", "tsukumogami": "tsukumogami/", "privacy": "privacy/"}
+PAGES = ["home", "stella", "oribe", "tsukumogami", "privacy", "impressum"]
+PATH = {"home": "", "stella": "stella/", "oribe": "oribe/", "tsukumogami": "tsukumogami/", "privacy": "privacy/",
+        "impressum": "impressum/"}
 
 UI = {
     "ja": {"prompt": "プロンプト", "nav": {"stella": "ステラは狼である。", "oribe": "猫と織部", "tsukumogami": "付喪神の盤"},
@@ -124,27 +125,41 @@ HOME = {
            "reply": "All three are in development. We film how they get made: the prompts we give the AI, and the parts we still do by hand."},
 }
 
+ADDRESS_HTML = "Soya Arakawa<br>Haus Tacorari<br>c/o Block Services<br>Stuttgarter Str. 106<br>70736 Fellbach<br>Deutschland"
+MAIL_LINK = '<a href="mailto:haustacorari@gmail.com">haustacorari@gmail.com</a>'
+GITHUB_PRIVACY = "https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement"
+
 PRIVACY = {
-    "ja": """<p class="updated">最終更新: 2026年11月14日</p>
-<p>Haus Tacorari(以下「私たち」)は、このサイトと、私たちが自分たちの YouTube チャンネルの運営に使う道具での情報の扱いを、次のとおり定めます。</p>
-<h2>このサイトについて</h2>
-<p>このサイトは GitHub Pages で公開している静的なページです。私たちはアクセス解析や Cookie、外部の追跡の仕組みを入れておらず、訪問者の個人情報を集めていません。GitHub がサイトの提供のために記録する情報は、GitHub のプライバシーに関する声明に従って扱われます。</p>
-<h2>YouTube の投稿道具について</h2>
-<p>私たちは、YouTube API サービスを使って、制作記録の動画を自分たちのチャンネル(Haus Tacorari)に上げ、公開日時を予約する道具を使っています。この道具は次のとおり動きます。</p>
+    "ja": f"""<p class="updated">最終更新: 2026年11月14日</p>
+<p>このページでは、Haus Tacorari(以下「私たち」)が、このサイトと、自分たちの YouTube チャンネルの運営に使う道具で、個人に関する情報をどう扱うかを説明します。EU 一般データ保護規則(GDPR)に基づく説明です。</p>
+<h2>責任者</h2>
+<p>{ADDRESS_HTML}<br>メール: {MAIL_LINK}</p>
+<h2>このサイトの配信(GitHub Pages)</h2>
+<p>このサイトは、GitHub, Inc.(88 Colton Street, San Francisco, CA 94107, USA)の GitHub Pages で配信しています。ページを開くと、GitHub は配信と安全のために、IP アドレス、日時、開いたページ、ブラウザの種類などのアクセス記録を処理します。この処理は、サイトを安定して安全に届けるという私たちの正当な利益に基づきます(GDPR 第6条第1項 f)。情報は米国で処理されることがあります。詳しくは <a href="{GITHUB_PRIVACY}">GitHub のプライバシーに関する声明</a>をご覧ください。</p>
+<p>私たち自身は、アクセス解析、Cookie、外部のフォントや追跡の仕組みを使っていません。ページは外部のサーバーから何も読み込みません。</p>
+<h2>メールでのお問い合わせ</h2>
+<p>メールをいただいた場合、返信のためだけに、お名前、メールアドレス、本文を使います(GDPR 第6条第1項 b または f)。用件が済み、保存の義務がなくなれば削除します。</p>
+<h2>YouTube の投稿道具</h2>
+<p>私たちは、YouTube API サービスを使って、制作記録の動画を自分たちのチャンネル(Haus Tacorari)に上げ、公開日時を予約する道具を使っています。</p>
 <ul>
 <li>使う人は、私たち自身だけです。ほかの人のアカウントにはつながりません。</li>
 <li>読み書きするのは、Haus Tacorari のチャンネルの情報(動画のアップロード、タイトル、説明、公開日時、サムネイル)と、チャンネル名の確認だけです。</li>
 <li>ログインの情報(アクセストークン)は、私たちの作業用のコンピューターの中だけに保存し、外部に送ったり共有したりしません。</li>
 <li>取得した情報を、広告、販売、第三者への提供に使いません。</li>
-<li>アクセスの許可は、Google アカウントのセキュリティ設定(<a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>)からいつでも取り消せます。</li>
+<li>アクセスの許可は、<a href="https://myaccount.google.com/permissions">Google アカウントのセキュリティ設定</a>からいつでも取り消せます。</li>
 </ul>
-<p>この道具は YouTube API サービスを使っています。YouTube の利用規約(<a href="https://www.youtube.com/t/terms">https://www.youtube.com/t/terms</a>)と Google のプライバシーポリシー(<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>)も適用されます。</p>
-<h2>お問い合わせ</h2>
-<p><a href="mailto:haustacorari@gmail.com">haustacorari@gmail.com</a></p>""",
-    "en": """<p class="updated">Last updated: 14 November 2026</p>
-<p>This page explains how Haus Tacorari ("we") handles information on this website and in the tool we use to run our own YouTube channel.</p>
-<h2>This website</h2>
-<p>The site is a set of static pages hosted on GitHub Pages. We have not added any analytics, cookies or third-party trackers, and we do not collect personal data from visitors. Anything GitHub records to serve the site is covered by GitHub's privacy statement.</p>
+<p>この道具には、<a href="https://www.youtube.com/t/terms">YouTube の利用規約</a>と <a href="https://policies.google.com/privacy">Google のプライバシーポリシー</a>も適用されます。</p>
+<h2>あなたの権利</h2>
+<p>あなたには、自分に関する情報について、開示(第15条)、訂正(第16条)、削除(第17条)、処理の制限(第18条)、データポータビリティ(第20条)、異議(第21条)を求める権利があります。ご連絡は上のメールアドレスへどうぞ。監督機関に苦情を申し立てることもできます。私たちの所在地の監督機関は、バーデン=ヴュルテンベルク州のデータ保護・情報自由委員(LfDI Baden-Württemberg)です。</p>""",
+    "en": f"""<p class="updated">Last updated: 14 November 2026</p>
+<p>This page explains how Haus Tacorari ("we") handles personal data on this website and in the tool we use to run our own YouTube channel, as required by the EU General Data Protection Regulation (GDPR).</p>
+<h2>Controller</h2>
+<p>{ADDRESS_HTML}<br>Email: {MAIL_LINK}</p>
+<h2>Hosting (GitHub Pages)</h2>
+<p>The site is served by GitHub Pages, run by GitHub, Inc., 88 Colton Street, San Francisco, CA 94107, USA. When you open a page, GitHub processes access data such as your IP address, the time, the page requested and your browser type, to deliver the site and keep it secure. The legal basis is our legitimate interest in a stable, secure website (Art. 6(1)(f) GDPR). This data may be processed in the United States. See the <a href="{GITHUB_PRIVACY}">GitHub General Privacy Statement</a>.</p>
+<p>We use no analytics, no cookies, and no external fonts or trackers. The pages load nothing from third-party servers.</p>
+<h2>Email</h2>
+<p>If you write to us, we use your name, email address and message only to reply (Art. 6(1)(b) or (f) GDPR). We delete them once the matter is settled and no retention duty applies.</p>
 <h2>Our YouTube publishing tool</h2>
 <p>We use the YouTube API Services in a small tool that uploads our devlog videos to our own channel, Haus Tacorari, and schedules when they go public.</p>
 <ul>
@@ -152,12 +167,41 @@ PRIVACY = {
 <li>It reads and writes data for the Haus Tacorari channel only: video uploads, titles, descriptions, publish times and thumbnails, plus a check of the channel name.</li>
 <li>The sign-in token stays on our own work computer. We do not send it anywhere or share it.</li>
 <li>We do not use any of this data for advertising, sell it, or pass it to third parties.</li>
-<li>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.</li>
+<li>Access can be revoked at any time in your <a href="https://myaccount.google.com/permissions">Google Account security settings</a>.</li>
 </ul>
-<p>Because the tool uses the YouTube API Services, the YouTube Terms of Service (<a href="https://www.youtube.com/t/terms">https://www.youtube.com/t/terms</a>) and the Google Privacy Policy (<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>) also apply.</p>
-<h2>Contact</h2>
-<p><a href="mailto:haustacorari@gmail.com">haustacorari@gmail.com</a></p>""",
+<p>The <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> also apply to this tool.</p>
+<h2>Your rights</h2>
+<p>You have the right of access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and objection (Art. 21). Write to the address above. You may also lodge a complaint with a supervisory authority. Ours is the State Commissioner for Data Protection and Freedom of Information of Baden-Württemberg (LfDI Baden-Württemberg).</p>""",
 }
+
+IMPRESSUM_DE = f"""<h2 lang="de">Impressum</h2>
+<div lang="de">
+<p><strong>Angaben gemäß § 5 DDG</strong><br>{ADDRESS_HTML}</p>
+<p><strong>Kontakt</strong><br>E-Mail: {MAIL_LINK}</p>
+<p><strong>Umsatzsteuer</strong><br>Gemäß § 19 UStG wird keine Umsatzsteuer berechnet (Kleinunternehmerregelung).</p>
+<p><strong>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</strong><br>Soya Arakawa, Anschrift wie oben.</p>
+<p><strong>Verbraucherstreitbeilegung</strong><br>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+</div>"""
+
+IMPRESSUM = {
+    "ja": IMPRESSUM_DE + f"""
+<h2>運営者情報(日本語訳)</h2>
+<p>ドイツの法律(デジタルサービス法 § 5)に基づく表示です。正文は上のドイツ語です。</p>
+<p><strong>運営者</strong><br>{ADDRESS_HTML}</p>
+<p><strong>連絡先</strong><br>メール: {MAIL_LINK}</p>
+<p><strong>売上税</strong><br>ドイツ売上税法 § 19(小規模事業者の特例)により、売上税は課していません。</p>
+<p><strong>内容の責任者(州間メディア協定 § 18 第2項)</strong><br>Soya Arakawa(所在地は上と同じ)</p>
+<p><strong>消費者紛争の調停</strong><br>消費者調停機関での紛争解決の手続きには参加しません。参加の義務もありません。</p>""",
+    "en": IMPRESSUM_DE + f"""
+<h2>Legal notice (English translation)</h2>
+<p>German law requires this notice (§ 5 of the Digital Services Act, DDG). The German text above is authoritative.</p>
+<p><strong>Provider</strong><br>{ADDRESS_HTML}</p>
+<p><strong>Contact</strong><br>Email: {MAIL_LINK}</p>
+<p><strong>VAT</strong><br>No VAT is charged under § 19 UStG (small business scheme).</p>
+<p><strong>Responsible for content under § 18(2) MStV</strong><br>Soya Arakawa, address as above.</p>
+<p><strong>Consumer dispute resolution</strong><br>We are neither willing nor obliged to take part in dispute resolution proceedings before a consumer arbitration board.</p>""",
+}
+
 
 YT_ICON = ('<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8">'
            '<rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="M10 9.2v5.6l4.8-2.8z" fill="currentColor" stroke="none"/></svg>')
@@ -254,6 +298,7 @@ def shell(lang, page, depth, title, desc, body):
 <a href="mailto:{MAIL}">{MAIL}</a>
 <a href="{YOUTUBE}">YouTube</a>
 <a class="spacer" href="{href(lang, "privacy", depth)}">{u["privacy"]}</a>
+<a href="{href(lang, "impressum", depth)}" lang="de">Impressum</a>
 </footer>
 <script src="{rel(depth)}assets/type.js" defer></script>
 </body>
@@ -308,6 +353,10 @@ def privacy(lang):
     return prompt(lang, title) + f'<div class="legal">{PRIVACY[lang]}</div>'
 
 
+def impressum(lang):
+    return prompt(lang, "Impressum") + f'<div class="legal">{IMPRESSUM[lang]}</div>'
+
+
 def main():
     sizes = web_images()
     count = 0
@@ -316,6 +365,8 @@ def main():
             depth = (1 if lang == "en" else 0) + (1 if PATH[page] else 0)
             if page == "home":
                 title, desc, body = HOME[lang]["title"], HOME[lang]["reply"], home(lang, sizes, depth)
+            elif page == "impressum":
+                title, desc, body = "Impressum", "Impressum | Haus Tacorari", impressum(lang)
             elif page == "privacy":
                 title, desc, body = UI[lang]["privacy"], UI[lang]["privacy"] + " | Haus Tacorari", privacy(lang)
             else:
